@@ -1,14 +1,16 @@
-import Button from './components/button/Button';
+import CardElement from './components/CardElement/CardElement';
+import CARDS_INFO from './components/constants/cardsInfo';
+import Container from './components/Container/Container';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
 	return (
-		<div>
+		<Container>
 			<GlobalStyles />
-			<h1>Curso de React</h1>
-			<Button color='steelblue'>Click Me!</Button>
-			<Button color='#f0f'>Click Me!</Button>
-		</div>
+			{CARDS_INFO.map(card => (
+				<CardElement key={card.id} {...card} />
+			))}
+		</Container>
 	);
 };
 
