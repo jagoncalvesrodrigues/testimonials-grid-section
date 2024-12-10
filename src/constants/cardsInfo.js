@@ -3,7 +3,7 @@ import { v4 } from "uuid";
 const CARDS_INFO = [
     {
         id:v4(),
-        image:'public/assets/images/image-daniel.jpg',
+        image:'/assets/images/image-daniel.jpg',
         name:'Daniel Clifford',
         job:'Verified Graduate',
         phrase:'I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.',
@@ -15,7 +15,7 @@ const CARDS_INFO = [
     },
     {
         id:v4(),
-        image:'public/assets/images/image-jonathan.jpg',
+        image:'/assets/images/image-jonathan.jpg',
         name:'Jonathan Walters',
         job:'Verified Graduate',
         phrase:'The team was very supportive and kept me motivated',
@@ -27,7 +27,7 @@ const CARDS_INFO = [
     },
     {
         id:v4(),
-        image:'public/assets/images/image-jeanette.jpg',
+        image:'/assets/images/image-jeanette.jpg',
         name:'Jeanette Harmon',
         job:'Verified Graduate',
         phrase:'An overall wonderful and rewarding experience',
@@ -39,7 +39,7 @@ const CARDS_INFO = [
     },
     {
         id:v4(),
-        image:'public/assets/images/image-patrick.jpg',
+        image:'/assets/images/image-patrick.jpg',
         name:'Patrick Abrams',
         job:'Verified Graduate',
         phrase:'Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.',
@@ -51,7 +51,7 @@ const CARDS_INFO = [
     },
     {
         id:v4(),
-        image:'public/assets/images/image-kira.jpg',
+        image:'/assets/images/image-kira.jpg',
         name:'Kira Whittle',
         job:'Verified Graduate',
         phrase:'Such a life-changing experience. Highly recommended!',
