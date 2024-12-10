@@ -9,18 +9,28 @@ import {
 	StyledTextCard
 } from './cardElement.styles';
 
-const CardElement = ({ image, name, job, phrase, text, color }) => {
+const CardElement = ({
+	image,
+	name,
+	job,
+	phrase,
+	text,
+	color,
+	textColor,
+	gcolum,
+	grow
+}) => {
 	return (
-		<StyledCardElement $color={color}>
+		<StyledCardElement $color={color} $gcolum={gcolum} $grow={grow}>
 			<StyledProfile>
 				<StyledImage src={image} alt='' />
 				<StyledProfileInfo>
-					<StyledName>{name}</StyledName>
-					<StyledJob>{job}</StyledJob>
+					<StyledName $textColor={textColor}>{name}</StyledName>
+					<StyledJob $textColor={textColor}>{job}</StyledJob>
 				</StyledProfileInfo>
 			</StyledProfile>
-			<StyledPhraseCard>{phrase}</StyledPhraseCard>
-			<StyledTextCard>{text}</StyledTextCard>
+			<StyledPhraseCard $textColor={textColor}>{phrase}</StyledPhraseCard>
+			<StyledTextCard $textColor={textColor}>{text}</StyledTextCard>
 		</StyledCardElement>
 	);
 };
